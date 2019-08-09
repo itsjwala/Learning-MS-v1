@@ -1,0 +1,19 @@
+organize project structure
+
+https://docs.gradle.org/current/userguide/organizing_gradle_projects.html#organizing_gradle_projects
+
+
+lifecycle
+
+https://docs.gradle.org/current/userguide/build_lifecycle.html#build_lifecycle
+
+
+initialization, configuration, execution
+	|				|			|
+setting.gradle	build.gradle	tasks
+									- configuration and action
+
+
+
+
+https://docs.gradle.org/current/userguide/tutorial_using_tasks.html#sec:task_dependencies
