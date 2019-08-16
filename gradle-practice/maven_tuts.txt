@@ -1,0 +1,29 @@
+maven
+	- lifecycle
+				- phase 1		->	goal1,goal2
+				- phase 2		-> goal1,goal3
+				- phase 3		-> goal4
+
+* phase contains collection of goals(smallest unit of task)
+* goals may or maynot be bounded to single PHASE, it may be bounded to multiple phase as well
+
+PHASE
+eg: compile, test, deploy e.t.c
+
+GOAL
+
+	PHASE:GOAL
+eg:  jar:[jar] , surefire:test e.t.c
+
+
+
+$ mvn PHASE
+-> run all preceding phase(which means running goals in each phase) till this PHASE
+
+
+$ mvn PHASE:GOAL
+-> run this specific GOAL only (which is bounded with this PHASE)
+
+more info :-
+
+https://www.baeldung.com/maven-goals-phases

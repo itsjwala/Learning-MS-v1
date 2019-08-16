@@ -7,10 +7,21 @@ lifecycle
 
 https://docs.gradle.org/current/userguide/build_lifecycle.html#build_lifecycle
 
+https://javajee.com/introduction-to-gradle-lifecycle-and-tasks
+
+Gradle lifecycle consist of three phases: initialization, configuration, and execution:
+
+During **Initialization**, Gradle decides which projects are to participate in the build.
+
+During **Configuration**, task objects are assembled into an internal object model, usually called the DAG (for directed acyclic graph).
+
+During **Execution**, build tasks are executed in the order required by their dependency relationships.
+
+
 
 initialization, configuration, execution
 	|				|			|
-setting.gradle	build.gradle	tasks
+setting.gradle	build.gradle	tasks : properties (ext.PROPERTY_NAME inside TASK closure), functions :- doLast,doFirst
 									- configuration and action
 
 
